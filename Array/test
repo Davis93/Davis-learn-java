@@ -1,3 +1,5 @@
+//This example is contain array in java,demonstrate some information in it ,such as max ,BubbleSort,etc
+
 public class Totaltest {
 	public static void main(String[] args){
 		double[] myList={5.6,4.5,3.3,13.2,4.0,34.33,34.0,45.45,99.993,11123};
