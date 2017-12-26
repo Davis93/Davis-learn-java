@@ -1,17 +1,15 @@
 printf 方法可以很轻松地格式化时间和日期。使用两个字母格式，它以 %t 开头并且以下面表格中的一个字母结尾。
 
 import java.util.Date;
+public class PrintfDemo {
 
-public class DateDemo2 {
 	public static void main(String[] args){
-		Date date= new Date();
-		System.out.printf("%tc%n ",date);//星期一 十二月 25 21:33:40 CST 201
-		System.out.printf("%tF%n ",date); //2017-12-25
-		System.out.printf("%tD%n ",date); //12/25/17
-		System.out.printf("%tr%n ",date); //09:32:27 下午
-		System.out.printf("%tT%n ",date);// 21:32:58
-		System.out.printf("%tR%n ",date);// 21:33
-		
+		Date date =new Date();
+		System.out.printf(" %tc%n",date);//all the information ,date ;NOT:+date
+		System.out.printf(" %tF%n",date);// yyyy-MM-dd
+		System.out.printf(" %tD%n",date);// yy/MM/dd
+		System.out.printf(" %tr%n",date);//12时制 HH:MM:SS PM
+		System.out.printf(" %tT%n",date);//HH:MM:SS
+		System.out.printf(" %tR%n",date);//24时制HH:MM
 	}
-
 }
