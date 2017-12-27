@@ -17,3 +17,8 @@ public void set(int feild,int value)
   c1.set(Calendar.MONTH,12);
   c1.set(Calendar.YEAR,27);
 }
+
+//Add设置
+Calendar c1=Calendar.getInstance();
+c1.add(Calendar.DATE,10)//当前日期加10天
+c1.add(Calendar.DATE,-10)//当前日期减10天
