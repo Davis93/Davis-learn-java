@@ -11,7 +11,7 @@ public final void set(int year,int month,int year){
 //只用到部分字段
 Calendar c1=Calendar.getInstance();
 
-public void set(int feild,int value)
+public void set(int field,int value)
 {
   c1.set(Calendar.DATE,27);
   c1.set(Calendar.MONTH,12);
