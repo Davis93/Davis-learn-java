@@ -1,6 +1,6 @@
 import java.util.regex.*;
 
-class RegexDemo{
+public class RegexDemo{
   public static void main(String[] args){
   String content ="I am noob"+"from runoob.com";
   String pattern=".*runoob.com.*";
