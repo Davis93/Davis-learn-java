@@ -12,12 +12,12 @@ Matcher类的方法：
               public boolean lookingAt(); public boolean find/find(int start);public boolean matches()
             
              替换方法；
-            (1) 实现非终端添加和替换步骤 public Matcher appendRepalcement(StringBuffer sb,String replacement)
-            (2)实现终端添加和替换步骤。 public StringBuffer appendTail(StringBuffer sb)
-            (3)public String replaceAll(String repacement)
-            (4)public String replaceFirst(String replace)
-            (5)public static String quoteRepalcement(String s)
-              start，end 方法；
+            (1) 实现非终端添加和替换步骤 public Matcher appendRepalcement(StringBuffer sb,String replacement)   ？？？？？
+            (2)实现终端添加和替换步骤。 public StringBuffer appendTail(StringBuffer sb)   ？？？？？？
+            (3)public String replaceAll(String repacement)  
+            (4)public String replaceFirst(String replace)
+            (5)public static String quoteRepalcement(String s) ？？？？？？？？？
+              start，end 方法；
               matches,lookingAt方法；    matches方法要求全都匹配；lookinAt要求从第一个字符开始匹配
               repalceFirst,replaceAll方法；
               appendReplacement,appendTail方法；
