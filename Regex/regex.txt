@@ -18,8 +18,8 @@ Matcher类的方法：
             (4)public String replaceFirst(String replace)
             (5)public static String quoteRepalcement(String s)
               start，end 方法；
-              matches,lookingAt方法；    
-              repalceFirst,replaceAll方法；
+              matches,lookingAt方法；    matches方法要求全都匹配；lookinAt要求从第一个字符开始匹配
+              repalceFirst,replaceAll方法；
               appendReplacement,appendTail方法；
 
 
