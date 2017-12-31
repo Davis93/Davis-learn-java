@@ -10,9 +10,13 @@ Matcher类的方法：
               
               研究方法； 检查字符串，并返回一个boolean值
               public boolean lookingAt(); public boolean find/find(int start);public boolean matches()
-             
             
              替换方法；
+            (1) 实现非终端添加和替换步骤 public Matcher appendRepalcement(StringBuffer sb,String replacement)
+            (2)实现终端添加和替换步骤。 public StringBuffer appendTail(StringBuffer sb)
+            (3)public String replaceAll(String repacement)
+            (4)public String replaceFirst(String replace)
+            (5)public static String quoteRepalcement(String s)
               start，end 方法；
               matches,lookingAt方法；    
               repalceFirst,replaceAll方法；
