@@ -8,7 +8,10 @@ public class VarargsDemo{
         if(numbers.length==0)
         {
             System.out.println("No agument passed");
+            return;
         }
+        double result =number[i]
+        
     }
 
 
