@@ -12,3 +12,8 @@ public class TestVoidMethod1 {
 		}
 	}
 }
+
+
+result :
+I love u:3344
+I love u:3344
