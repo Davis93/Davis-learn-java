@@ -2,3 +2,6 @@
 输入/出流：输入流表示从一个源读取数据，输出流表示向一个目标写数据
 控制台输入由System.in完成 BufferedReader br= new BufferedReader(new InputStreamReader(System.in));
 控制台读取多字符输入：从BufferedReader 对象读取一个字符要用reader()方法：int reader() throws IOException;每次调用reader()方法，从输入流读取一个字符作为整数值返回；当流结束返回-1；该方法抛出 IOExcepiton 异常
+
+从控制台读取字符串　
+　
