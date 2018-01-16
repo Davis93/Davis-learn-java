@@ -13,7 +13,7 @@ FileInputStream 流：用于从文件读取数据 有两种方法实现；（1�
                                                       InputStream f=new FileInputStream("C:/java/hello");    
                                                   (2) 也可以使用一个文件对象来读取文件
                                                   File f=new File("C:/java/hello");
-                                                  InputStream out= new FileInputStream(f);
-
+                                                  InputStream out= new FileInputStream(f);
+Attention Please: JavaIO 编程中要关注异常
 
 　
