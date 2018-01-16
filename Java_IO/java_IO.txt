@@ -9,5 +9,7 @@
 
 控制台输出；控制台输出由print(),println()完成，这些方法由PrintStream类定义,System.out 是这类对象的引用；PrintStream类继承了OutputStream类，并且实现了write()方法；一般print(),println()使用比较方便，write()方法使用没有那么广泛。
 
+FileInputStream 流：用于从文件读取数据
+
 
 　
