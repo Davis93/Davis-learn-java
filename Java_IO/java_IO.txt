@@ -14,6 +14,8 @@ FileInputStream 流：用于从文件读取数据 有两种方法实现；（1�
                                                   (2) 也可以使用一个文件对象来读取文件
                                                   File f=new File("C:/java/hello");
                                                   InputStream out= new FileInputStream(f);
-Attention Please: JavaIO 编程中要关注异常
+Attention Please: JavaIO 编程中要关注异常IOException
+
+IO流：字符流，字节流；字符流：reader(),writer();字节流：InputStream,OutputStream 
 
 　
