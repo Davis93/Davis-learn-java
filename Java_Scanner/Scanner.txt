@@ -2,3 +2,7 @@
 
 java.util.Scanner是Java 5 new feature，可以通过Scanner类获取用户输入
 Scanner s= new Scanner(System.in)
+
+可以使用hasNext(),与hasNextLine()方法来判断是否还有输入
+
+next(),与nextLine()方法的区别：nextLine()可以完整输出，next()只能输出一部分
