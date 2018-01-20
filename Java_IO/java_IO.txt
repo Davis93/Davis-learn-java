@@ -18,4 +18,6 @@ Attention Please: JavaIO 编程中要关注异常IOException
 
 IO流：字符流，字节流；字符流：reader(),writer();字节流：InputStream,OutputStream 
 
+input 对应 reader ; output对应 writer
+
 　
