@@ -6,3 +6,10 @@ Scanner s= new Scanner(System.in)
 可以使用hasNext(),与hasNextLine()方法来判断是否还有输入
 
 next(),与nextLine()方法的区别：nextLine()可以完整输出，next()只能输出一部分
+
+next():(1)一定要读取到有效字符后才结束输入 (2)对输入有效字符之前遇到的空白，next()方法会自动将其去掉 (3)只有输入有效字符后，才将后面输入的空白作为分隔符或者结束符     Tips： next()不能得到带有空格的字符串
+
+nextLine(): (1)以Enter为结束符，可以返回Enter之前的所有字符
+
+若要输入int/float类型数据，在输入之前用hasNextInt()验证，nextInt（）读取
+
