@@ -1,34 +1,28 @@
 import java.io.*;
-// to solve the error code write problem（感觉此例是对字节/字符串进行操作）
-public class fileStreamTest2 {
+
+public class fileStreamtest2 {
 	public static void main(String[] args) throws IOException
 	{
-		File f= new File("a.txt");
-		FileOutputStream out= new FileOutputStream(f);
-		OutputStreamWriter writer =new OutputStreamWriter(out,"UTF-8");
+		File f= new File("Test.txt");
 		
-		writer.append("中文输入");//write to the buffered-zone
-		writer.append("\r\n");// return换行
+		FileOutputStream out=new FileOutputStream(f);//out  writer
+		OutputStreamWriter writer=new OutputStreamWriter(out,"UTF-8");
+		writer.append("中文输入");
+		writer.append("\r\n");
 		writer.append("English");
-		writer.close();
-		out.close();
+		writer.close();//关闭写入流
+		out.close();//关闭输出流
 		
-		FileInputStream in=new FileInputStream(f);
-		InputStreamReader reader= new InputStreamReader(in,"UTF-8");
-		
+		FileInputStream in=new FileInputStream(f);//in reader
+		InputStreamReader reader=new InputStreamReader(in,"UTF-8");
 		StringBuffer sb=new StringBuffer();
-		while (reader.ready())
+		while(reader.ready())//ready()
 		{
-			sb.append((char)reader.read());//append用法
+			sb.append((char)reader.read());//转化成字符加载到StringBuffer对象上
 		}
-		
 		System.out.println(sb.toString());
-		reader.close();
-		in.close();
-		
-		
-		
-		
+		reader.close();//关闭读取流
+		in.close();//关闭输入流	
 		
 	}
 
