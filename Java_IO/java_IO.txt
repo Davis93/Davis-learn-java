@@ -20,4 +20,6 @@ IO流：字符流，字节流；字符流：reader(),writer();字节流：InputS
 
 input 对应 reader ; output对应 writer
 
+每次使用完后，都要关闭：先关闭写入流（writer.close()）,关闭输出流（out.close()）;再关闭读取流（reader.close()）,关闭输入流（in.close()）
+
 　
