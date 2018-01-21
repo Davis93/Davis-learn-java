@@ -12,4 +12,4 @@ Java异常处理机制：
 Throwable下面有Exception类和Error类；Exception类下面有IOException类和RuntimeException类
 
 Java 程序通常不捕获错误。错误一般发生在严重故障时，它们在Java程序处理的范畴之外。
-Error用来指示运行时环境发生的错误。
+Error用来指示运行时环境发生的错误。如JVM从内存中溢出，程序不会错误中恢复
