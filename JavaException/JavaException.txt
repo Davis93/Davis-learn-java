@@ -14,3 +14,14 @@ Throwable下面有Exception类和Error类；Exception类下面有IOException类�
 Java 程序通常不捕获错误。错误一般发生在严重故障时，它们在Java程序处理的范畴之外。
 
 Error用来指示运行时环境发生的错误。如JVM从内存中溢出，程序不会错误中恢复。
+
+
+Java内置异常类：非检查性，检查性异常
+
+异常方法：Throwable类主要方法
+(1)public String getMessage（）
+(2)public Throwable getCause()
+(3)public String toString()
+(4)public void printStackTrace()
+(5)public StackTraceElement[] getStackTrace()
+(6)public Throwable fillInStackTrace()
