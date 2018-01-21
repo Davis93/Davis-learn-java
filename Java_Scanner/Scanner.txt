@@ -13,3 +13,7 @@ nextLine(): (1)以Enter为结束符，可以返回Enter之前的所有字符
 
 若要输入int/float类型数据，在输入之前用hasNextInt()验证，nextInt（）读取
 
+输入的时候字符都是可见的，Scanner类不适合从控制台读取密码。Java SE6开始引入Console类来实现这个目的。若要读取一个密码，可采用以下代码：
+Console cons=System.console();
+String username=cons.readline("User name: ");
+char passwd=cons.readPassword("Password:");
