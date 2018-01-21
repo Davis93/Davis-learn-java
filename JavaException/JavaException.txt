@@ -25,3 +25,15 @@ Java内置异常类：非检查性，检查性异常
 (4)public void printStackTrace()
 (5)public StackTraceElement[] getStackTrace()
 (6)public Throwable fillInStackTrace()
+
+
+
+
+捕获异常
+try
+{
+  //代码
+}catch(Exception name,e1)
+{
+  catch 块
+}
