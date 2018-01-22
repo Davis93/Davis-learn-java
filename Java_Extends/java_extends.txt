@@ -12,3 +12,7 @@ final关键字：final声明的类不可以被继承，最终类；或者用fina
 修饰方法： (private/public/default/protected)final 返回值类型 方法名（）{//方法体}
 
 实例变量可以被定义为final,被final定义的变量不能修改；被声明为final类的方法自动声明为final;但实例变量并不是final
+
+
+构造器
+子类不能继承父类构造器；但父类构造器有参数的，必须在子类的构造器中显式的通过super关键字调用父类的构造器，并配以适当的参数列表
