@@ -4,3 +4,5 @@ Java继承是面向对象的一块基石，允许建立分等级层次的类
 
 继承格式： class 父类{ }
 class 子类 extends 父类{ }
+
+extends 用于继承只能是单继承 class A extends B；implements用于继承，可以实现多继承 class A implements B,C(B,C均为interface)
