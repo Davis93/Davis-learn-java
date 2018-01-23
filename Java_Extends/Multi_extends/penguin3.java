@@ -41,8 +41,5 @@ public class penguin3 extends animal4{ //子类
 		p3.sleep();
 		p3.introduction();
 		p3.run();
-	}
-
-	
- 
+	}	
 }
