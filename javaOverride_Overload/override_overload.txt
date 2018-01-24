@@ -1,2 +1,3 @@
-override:重写
+override:重写，子类对父类可访问的方法的实现过程进行重写，返回值和形参都不能变。子类可以根据自己需要，实现父类方法；重写抛出的异常不能超过被重写异常：如父类的一个方法声明了IOException异常，重写的时候不能抛出Exception异常，而应该只能抛出IOException异常的子类。(Exception类是IOException的父类)
+
 overload:重载
