@@ -67,6 +67,24 @@ throws/throw关键字：若一个方法未捕获一个检查性异常，该方�
 
 finally 关键字：用于创建try后面执行代码；无论异常是否发生，finally代码块中代码都会执行；finally代码块一般位于catch代码最后，一般是一些善后的语句
 
+//finallyDemo
+public class finallyTest {
+	public static void main(String[] args)
+	{
+		int[] a=new int[2];
+		try{   //try-catch类似一个分支结构
+			System.out.println("Array element two:"+a[2]);
+		}catch(ArrayIndexOutOfBoundsException e)
+		{
+			System.out.println("Exception thrown:"+e);
+		}
+		finally{ //finally后面都会执行
+			a[0]=6;
+			System.out.println("First array element is: "+a[0]);
+			System.out.println("Finally language is executed");
+		}
+	}
+}
 
 
 
