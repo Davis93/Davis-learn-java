@@ -16,6 +16,8 @@ Java异常处理机制：
 
 所有异常都是java.lang.Exception类继承的子类
 
+异常是一些错误；但错误不是异常
+
 Throwable下面有Exception类和Error类；Exception类下面有IOException类和RuntimeException类
 
 Java 程序通常不捕获错误。错误一般发生在严重故障时，它们在Java程序处理的范畴之外。
