@@ -67,6 +67,9 @@ throws/throw关键字：若一个方法未捕获一个检查性异常，该方�
 
 finally 关键字：用于创建try后面执行代码；无论异常是否发生，finally代码块中代码都会执行；finally代码块一般位于catch代码最后，一般是一些善后的语句
 
+try， catch， finally三者之间不能有其他任何代码；catch不能单独出现；try catch , try catch finally，try finally出现一个就行 
+
+
 //finallyDemo
 public class finallyTest {
 	public static void main(String[] args)
