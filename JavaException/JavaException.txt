@@ -65,6 +65,7 @@ try
 
 throws/throw关键字：若一个方法未捕获一个检查性异常，该方法必须用throws来声明，throws放在方法签名尾部；亦可用throw抛出一个异常不论其为新实例化还是刚捕捉到的。
 
+finally 关键字：用于创建try后面执行代码；无论异常是否发生，finally代码块中代码都会执行；finally代码块一般位于catch代码最后，一般是一些善后的语句
 
 
 
