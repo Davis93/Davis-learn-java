@@ -91,7 +91,21 @@ public class finallyTest {
 
 
 自定义异常声明：只继承Exception 类来创建的异常类是检查性异常；若想要写一个运行时异常，就要继承 RuntimeException类
+//自定义异常声明,写一个检查性异常 InSufficentFundsException类
+import java.io.*;
 
+public class InsufficentFundsException extends Exception {
+	private double amount;
+	public void InSufficentFundsException(double amount)//构造方法
+	{
+		this.amount=amount;
+	}
+	public double getAmount()
+	{
+		return amount;
+	}
+	
+}
 
 
 
