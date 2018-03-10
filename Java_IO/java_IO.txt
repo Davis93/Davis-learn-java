@@ -22,4 +22,10 @@ input 对应 reader ; output对应 writer
 
 每次使用完后，都要关闭：先关闭写入流（writer.close()）,关闭输出流（out.close()）;再关闭读取流（reader.close()）,关闭输入流（in.close()）
 
+
+File部分：（1）文件创建： mkdir() 和mkdirs();mkdir 返回true 或false;返回false指路径已存在或者路径不存在
+读取文件目录： list（）方法 ：String[] s=f.list();用来提取其包含的文件和文件夹的列表
+
+isDirectory()方法：返回true表示创建的一个File对象，是一个目录
+
 　
