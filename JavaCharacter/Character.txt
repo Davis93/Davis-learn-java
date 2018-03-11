@@ -8,3 +8,11 @@ Character类，是用于对单个字符进行操作；在对象中基本数据�
       
 
 (2)Character类的常见方法
+  （1）isLetter()
+  （2）isWhiteSpace()
+  （3）isDigit()
+  (4)isUpperCase
+  (5)isLowerCase()
+  (6)toString()
+  (7)toUpperCase()
+  (8)toLowerCase()
