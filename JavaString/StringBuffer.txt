@@ -16,3 +16,19 @@
 
 
 
+//StringBufferDemo
+
+public class StringBufferTest {
+	public static void main(String[] args){
+		StringBuffer sb=new StringBuffer("张凡英文名为：");
+		sb.append("Davis");
+		sb.append("Zhang");
+		//System.out.println(sb.toString());
+		System.out.println(sb);
+		System.out.println(sb.replace(1,2,"Daniel"));//replace(int start,int end,String sb)
+		System.out.println(sb.insert(1, "fan"));//insert(int offset,int b or String sb)
+		System.out.println(sb.delete(0, 3));//delete(int start,int end)
+		System.out.println(sb.reverse());//reverse()方法	
+	}
+
+}
