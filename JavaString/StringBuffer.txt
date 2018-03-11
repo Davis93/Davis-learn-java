@@ -35,3 +35,4 @@ public class StringBufferTest {
 
 
 （4）String 类是不可改变的，一旦你创建了String对象，其值就无法修改
+详情请见http://www.runoob.com/java/java-string.html，笔记部分介绍，google及runoob例子，s仅为String对象的一个引用，而非对象本身，原来的对象还在内存中。
