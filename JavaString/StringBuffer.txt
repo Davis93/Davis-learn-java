@@ -1,0 +1,18 @@
+（1）StringBuffer 与StringBuilder；都是用来对字符串进行操作，可以被多次修改，且不产生新的未使用对象；
+
+
+
+（2）StringBuffer 与StringBuilder的区别在于： 
+        StringBuffer具有线程安全性，但是速度较慢；
+        StringBuilder速度较快，但是不具有线程安全性
+ 
+ （3）StringBuffer类的常用方法：
+      （1）public StringBuffer append(String str1):将str附着于sb之后；sb.append(str1)
+      （2）public StringBuffer reverse();将sb的顺序颠倒
+      （3）public delete(int start,int end);
+      （4）public insert(int position,int b or String str2);
+      （5）replace(int start,int end ,String str3);
+
+
+
+
