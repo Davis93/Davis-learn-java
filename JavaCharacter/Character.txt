@@ -1,0 +1,10 @@
+Character类，是用于对单个字符进行操作；在对象中基本数据类型为char;
+
+(1)内置数据类型进行操作和利用Character类进行操作
+  （a）内置数据类型进行操作 char ch='A';char[] charArray={'a','b'}
+  (b) 装箱，拆箱：
+      装箱： Character ch=new Character('A'); 或者写成 Character ch='A';
+      拆箱： char ch1=ch; 
+      
+
+(2)Character类的常见方法
