@@ -32,3 +32,6 @@ public class StringBufferTest {
 	}
 
 }
+
+
+（4）String 类是不可改变的，一旦你创建了String对象，其值就无法修改
