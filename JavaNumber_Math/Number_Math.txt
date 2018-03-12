@@ -4,12 +4,12 @@
 
 
 （3）Number&Math类的常用方法
-   （1）xxxValue();
-   （2）compareTo()
-   （3）equals()
-   （4）valueOf()
-   （5）toString()
-   （6）parsexxx()
+   （1）xxxValue(): Integer x=5;x.byteValue();
+   （2）compareTo():Integer x=5;x.compareTo(6);
+   （3）equals():Integer x=5;x.equals(6);
+   （4）valueOf(): valueOf(int i);valueOf(String s);valueOf(String s,int radix)
+   （5）toString():toString();toString(int i)
+   （6）parsexxx(): static int parseInt(String s);static int parseInt(String s,int radix)
    （7）Math类：abs()
    （8）Math类：ceil()
    （9）Math类：floor()
