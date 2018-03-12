@@ -1,3 +1,18 @@
 (1)byte,int.char等为数据类型；所有的包装类（Integer,Long,Byte,Double,Short）都是抽象类Number类的子类
 
 （2）装箱即拆箱过程： （1）装箱 Integer x=5(or Integer x=new Integer(5)); (2)拆箱： int y=x;
+
+
+（3）Number&Math类的常用方法
+   （1）xxxValue();
+   （2）compareTo()
+   （3）equals()
+   （4）valueOf()
+   （5）toString()
+   （6）parsexxx()
+   （7）Math类：abs()
+   （8）Math类：ceil()
+   （9）Math类：floor()
+   （10）Math类：round()
+   （11）Math类：rint()
+   （12）Math类：random()
