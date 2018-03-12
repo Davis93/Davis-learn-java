@@ -16,3 +16,35 @@
    （10）Math类：round()；Math.round(x) 等价于 Math.floor（x+0.5）
    （11）Math类：rint()：最靠近的整数； Math.rint(20.5)返回20；Math.rint(20.6)返回21；
    （12）Math类：random()： Math.random介于[0,1]
+   
+   (1)numberDemo
+public class numberDemo {
+  
+	public static void main(String[] args){
+		Integer x=5;
+		System.out.println(x.intValue());//5
+		System.out.println(x.compareTo(3));//1
+		System.out.println(x.equals(5));//true
+		System.out.println(x.toString());//5
+		System.out.println(x.toString(12));//12
+		System.out.println(x.parseInt("2"));//2
+		System.out.println(x.parseInt("12",8));//10
+		System.out.println(x.valueOf(2));//2
+		System.out.println(x.valueOf("2"));//2
+		System.out.println(x.valueOf("12",16));//18
+	}
+}
+
+    (2)MathDemo
+    public class MathDemo {
+	public static void main(String[] args){
+		
+		Float c=-9.4f;
+		System.out.println(Math.abs(c));//9.4
+		System.out.println(Math.ceil(c));//-9.0
+		System.out.println(Math.round(c));//-9
+		System.out.println(Math.floor(c));//-10.0
+		System.out.println(Math.rint(c));//-9.0
+	}
+
+}
