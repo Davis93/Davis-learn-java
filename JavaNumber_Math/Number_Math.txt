@@ -10,9 +10,9 @@
    （4）valueOf(): valueOf(int i);valueOf(String s);valueOf(String s,int radix)
    （5）toString():toString();toString(int i)
    （6）parsexxx(): static int parseInt(String s);static int parseInt(String s,int radix)
-   （7）Math类：abs()
-   （8）Math类：ceil()
-   （9）Math类：floor()
-   （10）Math类：round()
-   （11）Math类：rint()
-   （12）Math类：random()
+   （7）Math类：abs():Math.abs();
+   （8）Math类：ceil():向上取整:取区间右侧整数 Math.ceil(20.6) 返回21
+   （9）Math类：floor()；向下取整：取区间左侧整数 Math.floor(20.6)返回20
+   （10）Math类：round()；Math.round(x) 等价于 Math.floor（x+0.5）
+   （11）Math类：rint()：最靠近的整数； Math.rint(20.5)返回20；Math.rint(20.6)返回21；
+   （12）Math类：random()： Math.random介于[0,1]
