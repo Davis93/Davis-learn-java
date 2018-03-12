@@ -36,15 +36,20 @@ public class numberDemo {
 }
 
     (2)MathDemo
-    public class MathDemo {
+    
+   public class MathDemo {
 	public static void main(String[] args){
 		
 		Float c=-9.4f;
+		Float a=9.5f;
+		Float b=-9.5f;
 		System.out.println(Math.abs(c));//9.4
 		System.out.println(Math.ceil(c));//-9.0
 		System.out.println(Math.round(c));//-9
 		System.out.println(Math.floor(c));//-10.0
 		System.out.println(Math.rint(c));//-9.0
+		System.out.println(Math.rint(a));//10
+		System.out.println(Math.rint(b));//-10
 	}
-
 }
+
