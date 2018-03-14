@@ -1,3 +1,4 @@
+//Davis zhang 2018/3/14
 //方法调用的两种形式，如下所示
 public class MethodCallDemo {
 	public static int max(int a,int b) //有返回值，运行完就是一个值
