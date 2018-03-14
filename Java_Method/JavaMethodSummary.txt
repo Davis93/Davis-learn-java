@@ -23,5 +23,7 @@ Java方法
  protected void finalized()
  {
  
+ //在此终结的代码
+ 
  }
  
