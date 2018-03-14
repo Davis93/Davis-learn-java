@@ -1,0 +1,27 @@
+Java方法
+（1）命名规则： addNumber; testpop_emptystack(JUnit测试方法)
+
+（2）返回非void 为函数；  返回void 即为过程
+
+（3）方法调用可以根据方法是否返回选择，可分为下面两种： （a）有返回值，返回某个值；(b)无返回值 即执行内部语句，结束后退出
+
+（4）if_else or if_else_else if_else if_else
+
+(5)值传递 先定义方法，再在主函数中调用，发生值传递。
+
+（6）super ,this 区别  super调用父类成分（变量or方法）； this 引用当前对象
+
+（7）变量作用域（生存周期）
+
+（8）构造方法（Constructor）:没有返回值，用于初始化对象；
+
+（9）可变参数 ：支持传递同类型的可变参数到一个方法；一个方法中只能有一个可变参数，若还有其他参数，可变参数一定要置于方法中的最后一个参数；
+    printMax(double...numbers)
+    
+ (10)finalized()方法 手动回收
+ 
+ protected void finalized()
+ {
+ 
+ }
+ 
