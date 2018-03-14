@@ -27,3 +27,7 @@ Java方法
  
  }
  
+ (11)getter,setter方法使用
+ 
+（12）修饰符，public default protected private
+ 
