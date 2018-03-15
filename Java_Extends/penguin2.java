@@ -13,7 +13,7 @@ public class penguin2  extends Animal2{
 	private String name;
 	public penguin2(String name)
 	{
-		super(name);
+		super(name); ////子类继承父类成分（成分包括成员变量和方法）
 		this.name=name;
 	}
 	public void eat()
