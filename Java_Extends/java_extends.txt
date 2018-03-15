@@ -16,7 +16,7 @@ final关键字：final声明的类不可以被继承，最终类；或者用fina
 
 构造器
 子类不能继承父类构造器；但父类构造器有参数的，必须在子类的构造器中显式的通过super关键字调用父类的构造器，并配以适当的参数列表
-//此例子写得不太好，改日重写，谢谢！为什么SuperClass会调用？？？？
+//此例子写得不太好，改日重写，谢谢！
 class SuperClass
 {
 	private int n;
@@ -40,6 +40,7 @@ class SubClass extends SuperClass{
 	}
 	public SubClass(int n)
 	{
+		//默认继承SuperClass(）
 		System.out.println("SubClass(int n):"+n);
 		this.n=n;
 	}
@@ -55,5 +56,5 @@ public class TestSuper_subConstructor {
 ---------------------------------------------------------------------------
 结果：SuperClass(int n)
 SubClass
-SuperClass()    //为虾米会有这个？？？？？
+SuperClass()    ////默认继承SuperClass()
 SubClass(int n):200
