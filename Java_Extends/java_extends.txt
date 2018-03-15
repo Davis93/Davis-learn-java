@@ -36,7 +36,7 @@ class SubClass extends SuperClass{
 	SubClass()
 	{
 		super(1);
-		System.out.println("SubClass()");
+		System.out.println("SubClass");
 	}
 	public SubClass(int n)
 	{
@@ -54,6 +54,6 @@ public class TestSuper_subConstructor {
 }
 ---------------------------------------------------------------------------
 结果：SuperClass(int n)
-SubClass()
+SubClass
 SuperClass()    //为虾米会有这个？？？？？
 SubClass(int n):200
