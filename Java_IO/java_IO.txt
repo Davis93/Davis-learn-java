@@ -28,4 +28,4 @@ File部分：（1）文件创建： mkdir() 和mkdirs();mkdir 返回true 或fals
 
 isDirectory()方法：返回true表示创建的一个File对象，是一个目录
 
-Java IO 的字节字符符合“6567” rule
+Java IO 的字节字符符合“7567” rule
