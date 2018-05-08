@@ -4,6 +4,7 @@ Java 图像用户界面笔记 edited by Zhangfan /Date:2018/5/8
 
 大致操作步骤总结，
 （1）先搭建一个框架，就是一个框框。 利用JFrame： JFrame jf=new JFrame("Title of the structure");
-（2）再向框架里面添加组件。组件会有按钮（JButton）,文本（JTextField,JTextArea）
+（2）再向框架里面添加组件。组件会有按钮（JButton）,文本（JTextField,JTextArea）标签（JLabel）etc.
+（3）再监听组件之间的关系，事件模型（推/拉模型）
 
 
