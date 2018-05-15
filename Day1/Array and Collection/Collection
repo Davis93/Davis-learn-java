@@ -33,6 +33,58 @@
   面试题53：      比较器是什么？Comparable 接口，Comparator接口
                     Comparable接口：定义对象的自然顺序，排序接口，只有一个。仅包含compareTo()方法
                     Comparator接口：定义用户定制的顺序，比较接口，可以有多个。
+  
+                     public class ComparableUser implements Comparable{
+                            private String id;
+                            private int age;
+                            public ComparableUser(String id,int age)
+                            {
+                                   this.id=id;
+                                   this.age=age;
+                            }
+                            public int getAge()
+                            {
+                                   return age;
+                            }
+                            public void setAget(int age)
+                            {
+                                   this.age=age;
+                            }
+                            public String getId()
+                            {
+                                   return id;
+                            }
+                            public String setId(String id)
+                            {
+                                   this.id=id;
+                            }
+                            public int compareTo(Object o)
+                            {
+                                   return this.age-((ComparableUser o).getAge());
+                            }
+                            
+                            /** 测试方法**/
+                            public static void main(String[] ags)
+                            {
+                                   ComparableUser user1=new ComparableUser("0x0001",24);
+                                   ComparableUser user2=new ComparableUser("0x0002",25);
+                                   if(user1.compareTo(user2)>0)
+                                   {
+                                          System.out.println("用户1大于用户2");
+                                   }
+                                   
+                                   
+                                   
+                                   
+                                   
+                                   
+                                   
+                                   
+                                   
+                            }
+                     }
+                     
+                     
                     
   
   
