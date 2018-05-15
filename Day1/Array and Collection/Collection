@@ -83,7 +83,52 @@
                             }
                      }
 ----------------------------------------------------------------------------------------------------------------------------------------------
+                     Comparator接口一般不会被集合元素类所实现，而单独实现或用匿名内部类的方式实现。以上代码用Comparator实现
+                     public class ComparatorUser{
+                     private String id;
+                     private int age;
+                     public User(String id,int age)
+                     {
+                            this.id=id;
+                            this.age=age;
+                     }
+                     public void setId(String id)
+                     {
+                            this.id=id;
+                     }
+                     public String getId()
+                     {
+                            return id;
+                     }
                      
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     
+                     }
                     
   
   
