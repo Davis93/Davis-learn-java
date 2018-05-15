@@ -10,4 +10,14 @@
 面试题52：    迭代器是什么？
        迭代就是将集合中所有元素遍历一遍。
        迭代器（Iterator）模式：游标（Cursor）模式：提供一个方法访问容器对象中各元素，而不需要暴露对象内部细节。
-       迭代器是一个接口Iterator.
+       迭代器是一个接口Iterator.实现了此接口的类：可迭代类，多至java.util包下集合类
+       eg: 
+              public class IteratorTest{
+                     public static void main(String[] args)
+                     {
+                            List<String> list=new ArrayList<String>();//创建保存字符串的List对象
+                            list.add("a");
+                            list.add("b");
+                            Iterator<String> it =list.iterator();//
+                     }
+              }
