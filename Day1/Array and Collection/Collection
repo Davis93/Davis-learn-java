@@ -31,7 +31,7 @@
    
   
   面试题53：      比较器是什么？Comparable 接口，Comparator接口
-                    Comparable接口：定义对象的自然顺序，排序接口，
-                    Comparator接口：定义用户定制的顺序，比较接口
+                    Comparable接口：定义对象的自然顺序，排序接口，只有一个
+                    Comparator接口：定义用户定制的顺序，比较接口，可以有多个
   
               
