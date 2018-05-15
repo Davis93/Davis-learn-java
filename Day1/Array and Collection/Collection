@@ -104,36 +104,34 @@
                      {
                             this.age=age;
                      }
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
-                     
+                     public int getAge()
+                     {
+                            return age;
                      }
-                    
-  
-  
-              
+                     /**测试程序**/
+                     public static void main(String[] args)
+                     {
+                            User user1=new User("0x00001",24);
+                            User user2=new User("0x00002",25);
+                            Comparator comp=new UserComparator();//生成结果比较器
+                            int rst=comp.compare(user1,user2);
+                            if(rst>0)
+                            {
+                                   System.out.println("用户1大于用户2");
+                            }else if (rst<0)
+                            {
+                                   System.out.println("用户1小于用户2");
+                            }else
+                            {
+                                   System.out.println("用户1等于用户2");
+                            }
+                     }
+                     class UserComparator implements Comparator{  //比较器类
+                            public int compare(Object arg0,,Object arg1) //比较方法
+                            {
+                                   User u1=(User) arg0;            //类型转换
+                                   User u2=(User) arg1;
+                                   return u1.getAge()-u2.getAge(); //结果
+                            }
+                     }
+                     
