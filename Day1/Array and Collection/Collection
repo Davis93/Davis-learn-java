@@ -16,8 +16,12 @@
                      public static void main(String[] args)
                      {
                             List<String> list=new ArrayList<String>();//创建保存字符串的List对象
-                            list.add("a");
-                            list.add("b");
-                            Iterator<String> it =list.iterator();//
+                            list.add("a");   //放入元素a
+                            list.add("b");  //放入元素b
+                            Iterator<String> it =list.iterator();//得到list的迭代器
+                            while(it.hasNext())        //将迭代的下标移动一位，并取得当前位置的元素
+                            {
+                                   System.out.println(it.next());
+                            }
                      }
               }
