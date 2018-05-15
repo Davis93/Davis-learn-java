@@ -15,3 +15,21 @@ Date： 2018/5/14
 
 面试题50：  二维数据长度是否固定？
            Java二维数组，先创建一个一维数组，然后该数组元素再引用另一个一维数组。然后该数组的元素再引用另一个一维数组。
+           eg: 
+           public class MultiArray{
+                public static void main(String[] args)
+                {
+                        int[][] arr=new int[3][];//行优先
+                        arr[0]=new int[]{4};
+                        arr[1]=new int[]{4,5};
+                        arr[2]=new int[]{4,5,6};
+                        for(int[] a:arr)
+                        {
+                                for(int i:a)
+                                {
+                                        System.out.println(i+"\t");
+                                }
+                                System.out.println();
+                        }
+                }
+           }
