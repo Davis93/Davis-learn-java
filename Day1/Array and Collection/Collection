@@ -27,4 +27,8 @@
               }
               PS: Java 5.0开始，可以用foreach循环替代，for(int i: arr){System.out.println(i);}本质上也是用Iterator 进行遍历
               迭代器提供一种访问一个集合对象中各个元素的途径。同时又不需要暴露该对象内部细节。Java使用Iterator 和Iterable 两个接口来实现集合类的可迭代性。迭代器主要的用法为，首先用hasNext()作为循环条件；再用next()得到每一个元素，最后再进行相关操作。              
-   面试题53：     
+   
+   
+  
+  面试题53：      比较器是什么？
+              
