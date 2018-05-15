@@ -4,4 +4,4 @@
         Collection:Set,List,Map；SortedSet,SortedMap
         List:有序存放，允许重复，可存放不同类型的对象。
         Set:无序存放，不允许重复，可存放不同类型对象
-        Map:键值对
+        Map:键值对(Key_Value)
