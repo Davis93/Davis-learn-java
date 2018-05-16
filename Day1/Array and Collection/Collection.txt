@@ -138,7 +138,23 @@
                      }
                     
  面试题54：   Vector与ArrayList区别？
-               ps:Vector和ArrayList 都是 List接口的实现类，都代表链表形式的数据结构。
-               Vector 线程安全，操作元素方法均为同步（synchronized)
+              
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
              
              
