@@ -154,8 +154,8 @@
               (4)HashTable使用Enumeration（枚举）遍历；而HashMap使用Iterator进行遍历
               
               (5)HashTable hash数组默认长度为11，增长方式为2n+1;HashMap的hash数组默认大小为16，而且一定为2的指数
-               
-               
+              (6)HashTable直接使用对象hashCode; HashMap会重新计算hash值
+          
                
                
                
