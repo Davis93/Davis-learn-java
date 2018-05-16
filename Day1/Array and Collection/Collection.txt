@@ -138,11 +138,10 @@
                      }
                     
  面试题54：   Vector与ArrayList区别？
-              
-               
-               
-               
-               
+            (1)同步性来说： Vector是线程安全的，即为同步的；而ArrayList为线程不安全的。
+            (2)就数据增长来说，Vector 默认增长为2倍，而ArrayList增长为1.5倍，所以ArrayList有利于节约内存空间
+            (3)在涉及到堆栈，队列，一般常用Vector;要求实现快速随机存取一般用ArrayList
+               
                
                
                
