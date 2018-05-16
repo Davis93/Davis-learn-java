@@ -142,11 +142,19 @@
             (2)就数据增长来说，Vector 默认增长为2倍，而ArrayList增长为1.5倍，所以ArrayList有利于节约内存空间
             (3)在涉及到堆栈，队列，一般常用Vector;要求实现快速随机存取一般用ArrayList
                
-               
-               
-               
-               
-               
+           
+           链表添加、删除更快；数组查找定位快     
+             
+  
+ 面试题55： HashTable 和HashMap区别
+              两者都是Map接口的实现类，保存元素时都是无序的
+              (1)同步性： HashTable为线程同步的
+              (2)HashTable 不允许null值(key,value都不允许)； HashMap允许null值
+              (3)HashTable 有一个contains()方法，类似于containsValue();
+              (4)HashTable使用Enumeration（枚举）遍历；而HashMap使用Iterator进行遍历
+              
+              (5)HashTable hash数组默认长度为11，增长方式为2n+1;HashMap的hash数组默认大小为16，而且一定为2的指数
+               
                
                
                
