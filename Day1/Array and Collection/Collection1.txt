@@ -1,4 +1,5 @@
 面试题56：  集合使用泛型（generics）有什么好处？
           （1）什么是泛型？ 在C++,被称为模板 List<String> list=new ArrayList<String>();  Iterator<String> it=list.iterator();  while(it.hasNext); it.next()
               泛型的本质是参数化类型，所操作的数据类型被指定为一个参数，引入目的：安全简单
+              可在类，接口，方法中创建
               泛型的好处就是：在编译的时候检查类型安全，所有强制类型转换都是自动和隐式的，可以提高代码复用率。
