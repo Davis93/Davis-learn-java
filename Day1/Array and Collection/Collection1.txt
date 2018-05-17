@@ -10,3 +10,10 @@
 面试题57：    如何将集合中元素进行排序？ 
             Java中List实现可以是Vector,ArrayList,LinkedList;提供了对对象组的访问，添加，删除； 但未内置排序；
             若我们想要实现排序，可以使用java.util.Collections类中 sort()方法，可以给方法传递一个List对象，也可以传递一个List对象和                         Comparator实例。
+
+
+
+
+
+面试题58：    符合什么条件的数据集合可以使用foreach循环？
+             数组或者实现了Iterable 接口的类实例，都是可以用foreach循环的Java集合框架中的集合大多数都符合第二条，所以均可使用foreach循环。
