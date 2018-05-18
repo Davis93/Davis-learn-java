@@ -1,0 +1,48 @@
+面试题：  BigDecimal类进行精确运算？？？？
+          Java的见到那浮点型float 和double在进行精确是算术运算的时候，往往不能得到准确结果，Java中会使用BigDecimal来解决这个问题。
+          
+          
+ import java.math.BigDecimal;
+/**
+ * (1)用float or double 构建BigDecimal对象，构造方法or valueOf()
+ * (2)通过调用BigDecimal 加减乘除进行计算add,subtract,multiply,divide
+ * (3)将BigDecimal对象转换为float,double 类型，用xxxValue()进行转换
+ */
+public class BigDecimalDemo1 {
+	public static void main(String[] args)
+	{
+		System.out.println(add(0.05,0.01));
+		System.out.println(subtract(1.0,0.42));
+		System.out.println(multiply(4.015,100));
+		System.out.println(divide(123.3,100));
+	}
+	//加法
+	public static double add(double v1,double v2)
+	{
+		BigDecimal b1=new BigDecimal(Double.toString(v1));
+		BigDecimal b2=BigDecimal.valueOf(v2);
+		return b1.add(b2).doubleValue();
+	}
+	//减法
+	public static double subtract(double a1,double a2)
+	{
+		BigDecimal s1=new BigDecimal(Double.toString(a1));
+		BigDecimal s2=BigDecimal.valueOf(a2);
+		return s1.subtract(s2).doubleValue();	
+	}
+	//乘法
+	public static double multiply(double b1,double b2)
+	{
+		BigDecimal m1=new BigDecimal(Double.toString(b1));
+		BigDecimal m2=BigDecimal.valueOf(b2);
+		return m1.multiply(m2).doubleValue();
+	}
+	//除法
+	public static double divide(double c1,double c2)
+	{
+		BigDecimal d1=new BigDecimal(Double.toString(c1));
+		BigDecimal d2=BigDecimal.valueOf(c2);
+		return d1.divide(d2).doubleValue();
+	}
+
+}
