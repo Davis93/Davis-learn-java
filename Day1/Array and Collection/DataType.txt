@@ -1,4 +1,4 @@
-面试题：  BigDecimal类进行精确运算？？？？
+面试题36：  BigDecimal类进行精确运算？？？？
           Java的见到那浮点型float 和double在进行精确是算术运算的时候，往往不能得到准确结果，Java中会使用BigDecimal来解决这个问题。
           
           
@@ -46,3 +46,8 @@ public class BigDecimalDemo1 {
 	}
 
 }
+
+
+面试题37：Java 可以用非0来代表true么？
+	Java不能用非0代表true,不能用0代表false;只能用布尔型的true和false进行条件判断
+
