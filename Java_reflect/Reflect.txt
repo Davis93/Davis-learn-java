@@ -37,5 +37,12 @@
         Field 对象通过Class 类的getDeclaredField()或getDeclaredFields()获得，均处于java.lang.reflect包下。
         Field提供有关类或接口的单个字段的信息，以及其动态访问权限，反射的字段可能是一个字段或者实例的字段。
         Field的方法主要分为两大类，getXXX,和setXXX；getXXX获取某对象该字段的值，getInt()，getFloat()等；setXXX用于设置值，一般有两个参数，一个是对象引用，另一个为需要设置的值。
+        
+        
+(4)如何操作类的方法（Method）
+    Method 类，代表是是类的方法（静态或非静态）。与Field类似，反射可以获取到其对象，使用方法为方法动态调用。
+    Method对象通过Class类的getMethod()或者getMethods()方法获得，也处于java.lang.reflect包下。
+    Method类中使用最多的是invoke(),其含义为方法调用，其第一个参数为Class所代表类的一个实例对象，之后是一个不定长的Object类型的参数列表。
+    
         
         
