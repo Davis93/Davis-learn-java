@@ -4,8 +4,9 @@
     
 （2）Class类的含义与作用？
     Class类在反射机制中起到了非常关键的作用，其为开发者进行反射开发的入口。 如何获取一个类的Class对象，如何让一个类动态的加载到JVM中？
-   
-   
-   
-   
-    
+  
+  每一个Class类的对象就代表了一种被加载进入JVM的类，其代表了该类的一种信息映射。开发者可以通过以下三种途径获取Class对象
+  (1)Class类的forName()方法的返回值
+  (2)访问所有类都会拥有的静态class属性
+  (3)调用所有对象都有的getClass()
+  在Class类中，定义许多关于类信息的方法。如：getName(),getMethod(),getConstructor()和newInstance（） 可以用于反射开发。还有isInstance()和isInterface()等一些关于类的功能方法。
