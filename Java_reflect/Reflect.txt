@@ -44,5 +44,19 @@
     Method对象通过Class类的getMethod()或者getMethods()方法获得，也处于java.lang.reflect包下。
     Method类中使用最多的是invoke(),其含义为方法调用，其第一个参数为Class所代表类的一个实例对象，之后是一个不定长的Object类型的参数列表。
     
+    
+ 
+ 
+ Summary: java 反射基础知识，本质：就是得到 class对象后，反向获取对象的各种信息。
+ 
+          获取Class对象方法
+          操作成员变量方法
+          操作类的方法
+    
+    
+    
+    
+    
+    
         
         
