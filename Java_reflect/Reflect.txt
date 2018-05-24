@@ -49,7 +49,12 @@
  
  Summary: java 反射基础知识，本质：就是得到 class对象后，反向获取对象的各种信息。
  
-          获取Class对象方法
+          获取Class对象方法（1） Class stuClass1= Class.forName(" 对象引用，一般为一个地址"); (据说这种最常用)
+                         （2） Class stuClass2= Student.class;
+                         （3） Student stu=new Student();
+                               Class stuClass3=stu.getClass();
+          
+          
           操作成员变量方法
           操作类的方法
     
