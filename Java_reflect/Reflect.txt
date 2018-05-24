@@ -9,4 +9,24 @@
   (1)Class类的forName()方法的返回值
   (2)访问所有类都会拥有的静态class属性
   (3)调用所有对象都有的getClass()
+  
   在Class类中，定义许多关于类信息的方法。如：getName(),getMethod(),getConstructor()和newInstance（） 可以用于反射开发。还有isInstance()和isInterface()等一些关于类的功能方法。
+  
+  Class是用来记录一个类的各种信息的，伴随着类的加载而创建。
+  那么，类在什么时候会被加载到JVM中呢？
+  (1)Student stu=new Student();//Student类会被加载到JVM中
+  
+  (2)访问该类静态成员
+    System.out.println(Student.count);
+  (3)使用Class类的静态forName()方法，动态地加载一个指定类名的类。若未找到，则抛出ClassNotFoundException
+  Class.forName(com.test.Student);//动态加载Student类
+
+类一旦被加载进入JVM中，就会为其创建一个Class类的实例对象。那么开发者如何得到这个Class对象？
+(1)Class的forName()的返回值就是Class类型，也就是动态导入类的Class对象的reference.
+    forName()完整定义：
+    public static Class<？> forName(String className) throws ClassNotFoundException
+(2)每个类都会有一个名称为Class的静态属性，通过其亦可获取到Class对象
+    Class<Student> clazz=Student.class;//访问Student类的class属性
+(3)Object类中有一个名为getClass()的成员方法，其返回的是对象运行时类的Class对象。
+    Student stu=new Student();
+    Class<Student> clazz=stu.getClass();
