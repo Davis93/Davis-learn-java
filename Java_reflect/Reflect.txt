@@ -30,3 +30,12 @@
 (3)Object类中有一个名为getClass()的成员方法，其返回的是对象运行时类的Class对象。
     Student stu=new Student();
     Class<Student> clazz=stu.getClass();
+
+(3)如何操作类的成员变量(Field)
+        Field类：代表类的属性（字段），亦称 成员变量，and how to use it？？？？
+        
+        Field 对象通过Class 类的getDeclaredField()或getDeclaredFields()获得，均处于java.lang.reflect包下。
+        Field提供有关类或接口的单个字段的信息，以及其动态访问权限，反射的字段可能是一个字段或者实例的字段。
+        Field的方法主要分为两大类，getXXX,和setXXX；getXXX获取某对象该字段的值，getInt()，getFloat()等；setXXX用于设置值，一般有两个参数，一个是对象引用，另一个为需要设置的值。
+        
+        
