@@ -48,7 +48,12 @@ TCP编程模型：C/S模式（Client/Server）
          
 
 
-
+  UDP编程模型
+         1）创建数据Socket，并制定端口号
+         2）
+         3）
+         4）
+         5）
 
 
 
