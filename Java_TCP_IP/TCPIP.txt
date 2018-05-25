@@ -50,10 +50,10 @@ TCP编程模型：C/S模式（Client/Server）
 
   UDP编程模型
          1）创建数据Socket，并制定端口号
-         2）
-         3）
-         4）
-         5）
+         2）对于消息接收端，提供一个byte数组进行数据存储；而对于发送消息一端，除此之外还需要提供对端的IP地址和端口号
+         3）调用DatagramPacket 的receive()或send()方法进行数据接收或者发送。
+         4）调用DatagramPack的getData()方法得到byte数组的数据
+         5）释放资源
 
 
 
