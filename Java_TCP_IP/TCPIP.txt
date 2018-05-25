@@ -28,6 +28,8 @@ IP:Internet Protocol：网络层
        
        
 TCP编程模型：C/S模式（Client/Server）
+     PS： 一般来说，任何TCP程序，都需要先运行服务器端，再运行客户端
+     
       (1)服务器端
          
          1）创建一个服务器端Socket,并指定一个端口号
