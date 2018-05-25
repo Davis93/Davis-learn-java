@@ -1,6 +1,7 @@
 TCP: TransmissionControl Protocol:传输层
 IP:Internet Protocol：网络层
  TCP/IP 结构 ：   应用层-->传输层-->网络层-->网络接口层
+ OSI(open system Interconnection)模型： 应用层-->表示层-->会话层-->传输层-->网络层-->网络链路层-->物理层
  1).应用层：应用程序间沟通，WWW(80),SMTP(25)，FTP(21)，Telnet(23)
  2).传输层：提供节点间数据传输，应用程序间通信，功能：数据格式化，数据确认，丢失重传等。主要协议包括TCP，和UDP(user datagram protocol,用户数据报)
  3).网络层：负责提供基本的数据包封包传送功能，让每个数据包都能到达目的主机，但是不检查是否被正确接收，主要体现为IP协议
