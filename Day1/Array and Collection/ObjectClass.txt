@@ -1,0 +1,17 @@
+Object类 包含如下8种类
+
+1）clone()
+
+2）equals()
+
+3）finalize()
+
+4）getClass()
+
+5）notify()/notifyAll()
+
+6）hashCode()
+
+7）toString()
+
+8）wait()
