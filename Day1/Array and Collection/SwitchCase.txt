@@ -1,0 +1,1 @@
+Switch 后面：short，char,long ,int,枚举类型. String(java7之后开始支持)；不能为boolean,double,float
