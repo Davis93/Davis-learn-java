@@ -1,0 +1,5 @@
+java.exe:JVM
+javadoc.exe 制作java文档
+jdb.exe 是java的调试器
+javaprof.exe：剖析工具
+javac.exe: 编译.java文件
