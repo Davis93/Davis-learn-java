@@ -1,0 +1,11 @@
+Java的堆内存分为两块： permanent space和 heap space;
+
+permanent space主要存放 静态类型数据： java Class,Method等。
+
+heap space: 年轻代,老年代；年轻代的垃圾回收叫Young GC，年老代的垃圾回收叫Full GC
+
+在年轻代经历了N次GC后仍然存活的对象，就会被复制到年老代中。 所以可以认为年老代中存放的是一些生命周期比较长的对象
+
+年老代溢出原因：循环上万次字符串处理，创建上千万个对象，在一段代码内申请上百甚至上G的内存
+
+持久代溢出原因：动态加载了大量Java类而导致溢出
