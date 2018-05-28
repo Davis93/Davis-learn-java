@@ -1,0 +1,24 @@
+1) 注册驱动程序
+ Class.forName("驱动程序完整类名");
+ 
+ 2）获取一个数据库连接
+ 
+  Connection conn=DriverManager.getConnection("连接url","用户名","密码");
+
+3)建立一个会话
+Statement stmt=conn.createStatement();
+
+4)执行SQL语句，增，删，改或者查询
+stmt.executeUpdate("增，删，改");
+or
+ResultSet rs=stmt.executeQuery("查询SQL记录");
+5.对结果进行处理哇
+While(rs.next())
+{
+  //some operations
+}
+
+6.关闭连接
+rs.close();
+stmt.close();
+conn.close();
