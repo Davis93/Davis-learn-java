@@ -1,0 +1,60 @@
+父类的静态成员初始化>父类的静态代码块>子类的静态成员初始化>子类的静态代码块>父类的代码块>父类的构造方法>子类的代码块>子类的构造方法
+
+静态数据只在类加载时执行一次：
+
+package staticCode;
+
+public class Test {
+	public static void main(String[] args)
+	{
+		S c=new S();
+		S c1=new S();
+	}
+
+}
+class F
+{
+	static int c;
+	static int b;
+	{
+		System.out.println("F方法块");
+	}
+	static {
+		System.out.println("F静态代码块"+c);
+	}
+	public F()
+	{
+		System.out.println("F构造方法");
+	}
+}
+class S extends F{
+	static int a;
+	static int b;
+	{
+		System.out.println("S方法块");
+	}
+	static {
+		System.out.println("S静态代码块"+a);
+	}
+	public S()
+	{
+		System.out.println("S构造方法");
+	}
+}
+
+
+
+程序运行结果：
+
+F静态代码块0
+S静态代码块0
+F方法块
+F构造方法
+S方法块
+S构造方法
+F方法块
+F构造方法
+S方法块
+S构造方法
+            
+
