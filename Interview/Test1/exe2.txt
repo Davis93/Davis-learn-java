@@ -1,0 +1,79 @@
+实现多线程的方法？？？？
+
+    1）实现Runnable接口，并实现该接口的run()方法
+      class Mythread implements Runnable
+      {
+          public void run()
+          {
+              System.out.println("Thread body");
+          }
+      }
+      public class Test
+      {
+          public static void main(String[] args)
+          {
+              MyThread thread=new MyThread();
+              Thread t=new Thread(thread);
+              t.start();//启动线程
+          }
+      }
+    
+    2）继承Thread类哇，并实现run()方法
+         class Mythread extends Thread
+         {
+            public void run()
+            {
+                System.out.println("Thread body");
+            }
+         }
+         public class Test
+         {
+              public static void main(String[] args)
+              {
+                  MyThread  t1=new MyThread();
+                  //等价于 MyThread t1=new Thread();
+      
+                  t1.start();//启动线程
+              }
+         }
+    
+    
+    3）实现Callable接口，重写call()方法 **********New Method**************
+    Callable对象属于Executor框架中的功能泪，Callable接口与Runnable接口类似，但是功能比Runnable接口强大，体现在以下三个方面
+       1)Callable可以在任务结束后提供一个返回值，Runnable无法提供这个功能。
+       2)Callable中call()方法可以抛出异常，而Runnable的run()不能抛出异常。
+       3)运行Callable可以拿到一个Future对象，Future对象表示异步计算的结果。提供了检查计算是否完成方法。线程属于异步计算模型，无法从其他线程中得到方法的返回值。此情况下，可以使用Futur来
+       监视目标线程调用call()方法的情况。当调用Future的get（）方法以获取结果时，当前线程就会阻塞，知道call()方法结束返回结果。
+       
+import java.util.concurrent.*;
+
+public class CallableDemo {
+	//创建线程类
+	public static class CallableTest implements Callable<String>
+	{
+		public String call() throws Exception
+		{
+			return "Hello World";
+		}
+	}
+	public static void main(String[] args)
+	{
+		ExecutorService threadPool =Executors.newSingleThreadExecutor();
+		//启动线程
+		Future<String> future=threadPool.submit(new CallableTest());
+		try
+		{
+			System.out.println("Waiting thread to finish........");
+			System.out.println(future.get());//等待线程结束，并返回结果
+		}catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+	}
+
+}
+
+       
+       
+    
+    
