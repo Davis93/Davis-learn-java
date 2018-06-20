@@ -45,3 +45,8 @@ UPDATE user
 set gender='male'
 WHERE name='davis'
 ===========================================
+DELETE:删
+===========================================
+DELETE FROM user
+WHERE name='Davis'
+===========================================
