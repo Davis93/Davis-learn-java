@@ -9,6 +9,8 @@
 Statement stmt=conn.createStatement();
 
 4)执行SQL语句，增，删，改或者查询
+查询：executeQuery(),返回查询后结果集
+增，删，改：executeUpdate()
 stmt.executeUpdate("增，删，改");
 or
 ResultSet rs=stmt.executeQuery("查询SQL记录");
