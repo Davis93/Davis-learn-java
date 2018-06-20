@@ -15,7 +15,7 @@ stmt.executeUpdate("增，删，改");
 or
 ResultSet rs=stmt.executeQuery("查询SQL记录");
 5.对结果进行处理哇
-While(rs.next())
+While(rs.next())//对查询结果进行处理
 {
   //some operations
 }
